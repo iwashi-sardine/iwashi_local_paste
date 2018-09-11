@@ -1,0 +1,19 @@
+{
+    "manifest_version":2,
+    "name":"いわし ローカルファイルペースト",
+
+    "version":"0.1.0",
+
+    "description":"返信フォームのペースト機能の強化",
+
+    "content_scripts":[
+      {
+        "matches": ["*://*.2chan.net/*/res/*.htm*"],
+        "js":["./content_scripts.js"]
+      }
+    ],
+
+    "permissions":[
+        "clipboardRead"
+    ]
+}
